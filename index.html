@@ -9,7 +9,7 @@
     <style>
         body {
             background-image: url(clouds-7050884_1280.webp);
-            background-size: contain 100px;
+            background-size: contain 50px;
         }
         label{
             font-style:italic;
@@ -44,17 +44,17 @@
         <h2 style="font-size: 17px; color:#920898;font-style: italic;">Rain is suck</h2>
         <form>
             <label for="email">your email :</label>
-            <input type="email"name="email" placeholder="put your email" width="30%" >
+            <input type="email" name="email" placeholder="put your email" width="30%" id="email" >
             <br>
             <br>
             <label for="name">Full name</label>
-            <input type="text" maxlength="10" minlength="2" width="30%">
+            <input type="text" placeholder="full name" maxlength="10" minlength="2" id="name">
             <br><br>
             <label for="age">year of birth :</label>
-            <input for="date" placeholder="year of birth" width="30%">
+            <input for="date" placeholder="year of birth" width="100%" id="age">
             <br><br>
             <lable for="grades">grades</lable>
-            <input type="number" min="0" max="15" onkeydown="returne false" width="30%" >
+            <input type="number" min="0" max="15" onkeydown="returne false" width="30%" id="grades">
             <br><br>
             <button style="font-size: 10px;height: 20px;color: #c3158e;">save</button>
         </form>
@@ -62,35 +62,39 @@
        <div>
            <table>
                <thead style="padding: 10px;" >
-                   <th>Full name</th>
-                   <th>Birth date </th>
-                   <th>Email</th>
+                   <tr>
+                    <th>Full name</th>
+                    <th>Birth date</th>
+                    <th>Email</th>
+                   </tr>
                </thead>
-              <tr>
-                  <td>yakov</td>
-                  <td>1.1.00</td>
-                  <td>yakkov@gmail.com</td>
-              </tr>
-              <tr>
-                  <td>daniel</td>
-                  <td>1.1.00</td>
-                  <td>dani@gmail.com</td>
-              </tr>
-              <tr>
-                <td>maya</td>
-                <td>0.0.99</td>
-                <td>maya@gmail.com</td>
-              </tr>
-              <tr>
-                <td>eldad</td>
-                <td>13.5.99</td>
-                <td>eldad@gmail.com</td>
-              </tr>
-              <tr>
-                <td>lior</td>
-                <td>0.0.99</td>
-                <td>lior@gmail.com</td>
-              </tr>
+               <tbody>
+                <tr>
+                    <td>yakov</td>
+                    <td>1.1.00</td>
+                    <td>yakkov@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>daniel</td>
+                    <td>1.1.00</td>
+                    <td>dani@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>maya</td>
+                  <td>0.0.99</td>
+                  <td>maya@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>eldad</td>
+                  <td>13.5.99</td>
+                  <td>eldad@gmail.com</td>
+                </tr>
+                <tr>
+                  <td>lior</td>
+                  <td>0.0.99</td>
+                  <td>lior@gmail.com</td>
+                </tr>
+               </tbody>
            </table>
        </div>
        <ol>
@@ -132,7 +136,7 @@
        </ol>
        <br><br>
     <footer style="text-align: center;background-color: #4e95e5;  color: white;border: 5px solid white; height: 15px; width:100% ; position: fixed;bottom: 0; width: 100%;">Summer is good</footer>
-       <img src="https://media.giphy.com/media/SnI9JZGHU9vb2/giphy.gif">
+       <img src="https://media.giphy.com/media/SnI9JZGHU9vb2/giphy.gif" alt="GIF of the sky" >
 </body>
 
 </html>
